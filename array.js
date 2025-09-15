@@ -116,10 +116,33 @@ console.log(arr)
     return x%10 == 0
  })
  console.log(n)
- */
+
  let arr = [1,2,3,10,20,30,40]
  let n = arr.map((x)=>{
     return x*x
  })
  console.log(n)
+  */
 
+ 
+let randomNumber = Math.floor(Math.random() * 100) + 1; // random number 1-100
+    let guesses = 0;
+
+    function checkGuess() {
+      let guess = parseInt(guess);
+      guesses++;
+
+      if (guess === randomNumber) {
+        let score = 100 - guesses;
+        document.getElementById("message").innerText = 
+          "🎉 Correct! The number was " + randomNumber;
+        document.getElementById("score").innerText = 
+          "Your score: " + score;
+      } else if (guess > randomNumber) {
+        document.getElementById("message").innerText = 
+          "Too high! Try again.";
+      } else if (guess < randomNumber) {
+        document.getElementById("message").innerText = 
+          "Too low! Try again.";
+      }
+    }
