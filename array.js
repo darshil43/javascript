@@ -116,9 +116,10 @@ console.log(arr)
     return x%10 == 0
  })
  console.log(n)
-*/
+ */
  let arr = [1,2,3,10,20,30,40]
  let n = arr.map((x)=>{
     return x*x
  })
  console.log(n)
+
