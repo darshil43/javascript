@@ -84,10 +84,41 @@ let b = a.filter((value)=>{
 })
 console.log(b)
 
- */
 
 let a = [1, 2, 3, 4, 5]
 let b = a.reduce((h1,h2)=>{
     return h1+h2
 })
 console.log(b)
+
+ 
+
+let arr =[1,2,3,4,5]
+let a = prompt("enter a number")
+a = Number.parseInt(a)
+arr.push(a)
+console.log(arr)
+
+
+let arr =[1,2,3,4,5]
+let a;
+do{
+ a = prompt("enter a number")
+a = Number.parseInt(a)
+arr.push(a)
+}while(a != 0)
+
+console.log(arr)
+
+
+ let arr = [1,2,3,10,20,30,40]
+ let n = arr.filter((x)=>{
+    return x%10 == 0
+ })
+ console.log(n)
+*/
+ let arr = [1,2,3,10,20,30,40]
+ let n = arr.map((x)=>{
+    return x*x
+ })
+ console.log(n)
